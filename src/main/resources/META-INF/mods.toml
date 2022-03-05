@@ -1,34 +1,58 @@
-# This is an example mods.toml file. It contains the data relating to the loading mods.
-# There are several mandatory fields (#mandatory), and many more that are optional (#optional).
-# The overall format is standard TOML format, v0.5.0.
-# Note that there are a couple of TOML lists in this file.
-# Find more information on toml format here:  https://github.com/toml-lang/toml
-# The name of the mod loader type to load - for regular FML @Mod mods it should be javafml
-modLoader="javafml" #mandatory
-loaderVersion="[39,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+modLoader="javafml"
+loaderVersion="[39,)"
+issueTrackerURL="https://github.com/Tazer-Y/Ablaze"
 license="MIT"
 
 [[mods]] #mandatory
 modId="ablaze"
-version="${mod_version}"
-displayName="Create: Engines Ablaze"
+version="0.0a"
+displayName="Create: Ablaze"
 #updateJSONURL="https://change.me.example.invalid/updates.json"
-#displayURL="https://change.me.to.your.mods.homepage.example.invalid/"
+displayURL="https://github.com/Tazer-Y/Ablaze"
 logoFile="ablaze.png"
-credits="Thanks for this example mod goes to Java"
-authors="Love, Cheese and small house plants"
+credits="Thanks to our discord server members and contributors!"
+authors="Tazers"
 description='''
-Create: Engines Ablaze is a mod that hopes to add new vehicles and space rockets to the create mod!'''
-# A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
+Create: Ablaze is a mod that hopes to empower the player even more with new vehicles, industry and steampunk space rockets to the create mod!'''
+
 [[dependencies.ablaze]]
     modId="forge"
     mandatory=true
     versionRange="[39,)"
     ordering="NONE"
     side="BOTH"
+
 [[dependencies.ablaze]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.18.1,1.19)"
     ordering="NONE"
     side="BOTH"
+
+[[dependencies.ablaze]]
+    modId="flywheel"
+    mandatory=true
+    versionRange="[1.18-0.6.0]"
+    ordering="AFTER"
+    side="CLIENT"
+
+[[dependencies.ablaze]]
+    modId="create"
+    mandatory=true
+    versionRange="[0.4d]"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.ablaze]]
+    modId="alloyed"
+    mandatory=false
+    versionRange="[1.18.1]"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.ablaze]]
+modId="steampowered"
+mandatory=false
+versionRange="[1.18.1-2.0.0-alpha]"
+ordering="AFTER"
+side="BOTH"
