@@ -46,7 +46,7 @@ Create: Ablaze is a mod that hopes to empower the player even more with new vehi
 [[dependencies.ablaze]]
     modId="alloyed"
     mandatory=false
-    versionRange="[1.18.1]"
+    versionRange="[1.18.1-v1.2]"
     ordering="AFTER"
     side="BOTH"
 

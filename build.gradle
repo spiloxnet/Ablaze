@@ -50,7 +50,7 @@ minecraft {
         }
 
         server {
-            workingDirectory project.file('run')
+            workingDirectory project.file('server')
 
             property 'forge.logging.markers', 'REGISTRIES'
             property 'mixin.env.remapRefMap', 'true'
@@ -114,13 +114,13 @@ dependencies {
     implementation fg.deobf(registrate)
     shade registrate
 
-    implementation fg.deobf("curse.maven:Create-${create_version}")
-    implementation fg.deobf("curse.maven:Flywheel-${flywheel_version}")
+    implementation fg.deobf("com.simibubi.create:Create:mc1.18.1_v${create_version}")
+    implementation fg.deobf("com.jozufozu.flywheel:Flywheel-Forge:1.18-${flywheel_version}")
     implementation fg.deobf("curse.maven:Create-Alloyed-${alloyed_version}")
     implementation fg.deobf("curse.maven:Create-Steampowered-${steampowered_version}")
 
-    compileOnly fg.deobf("mezz.jei:jei-${minecraft_version}:${jei_api_version}:api")
-    runtimeOnly fg.deobf("curse.maven:JEI-${jei_version}")
+    compileOnly fg.deobf("mezz.jei:jei-${minecraft_version}:${jei_version}:api")
+    runtimeOnly fg.deobf("mezz.jei:jei-${minecraft_version}:${jei_version}")
 
     // Make Testing Easier
     runtimeOnly fg.deobf("curse.maven:Configured-457570:3640884")
@@ -131,6 +131,7 @@ dependencies {
 }
 
 jar {
+    classifier = 'slim'
     manifest {
         attributes([
                 "Specification-Title"     : "${mod_id}",
@@ -144,12 +145,25 @@ jar {
     }
 }
 
-jar.finalizedBy('reobfJar')
+shadowJar {
+    classifier = ''
+    configurations = [project.configurations.shade]
+    relocate 'com.tterrag.registrate', 'net.tazer.ablaze.repack.registrate'
+}
+
+reobf {
+    shadowJar {}
+}
+
+artifacts {
+    archives jar, shadowJar
+}
 
 publishing {
+    tasks.publish.dependsOn 'build'
     publications {
         mavenJava(MavenPublication) {
-            artifact jar
+            artifact shadowJar
         }
     }
     repositories {
