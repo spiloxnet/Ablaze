@@ -11,8 +11,8 @@ Space rockets are the goal of this mod, but they're not as simple as you'd think
 
 Check out the wiki and in-game Tool-tips for further info on how to use these features, and stay tuned for an ever-growing selection of possibilities for your space rockets!
 
-<p align="center">[<img src="https://i.imgur.com/0lLX9Oy.jpg" width="200">](https://github.com/Tazer-Y/Ablaze/issues "Report Issues")
-[<img src="https://i.imgur.com/aWrjfKJ.jpg" width="200">](https://discord.gg/W5pz7gtJp7 "Feedback & Help")</p>
+[<img src="https://i.imgur.com/0lLX9Oy.jpg" width="200">](https://github.com/Tazer-Y/Ablaze/issues "Report Issues")
+[<img src="https://i.imgur.com/aWrjfKJ.jpg" width="200">](https://discord.gg/W5pz7gtJp7 "Feedback & Help")
 
 - Support for Minecraft 1.16: Not planned
 - Support for Fabric: Not planned
