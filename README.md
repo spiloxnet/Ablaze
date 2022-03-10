@@ -1,4 +1,4 @@
-###![Create: Ablaze Logo](https://cdn.discordapp.com/attachments/941856607573258281/944693040797327400/Engines_Ablaze.png)
+![Create: Ablaze Logo](https://cdn.discordapp.com/attachments/941856607573258281/944693040797327400/Engines_Ablaze.png)
 
 # Create: Ablaze
 
