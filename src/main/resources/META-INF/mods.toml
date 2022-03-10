@@ -32,7 +32,7 @@ Create: Ablaze is a mod that hopes to empower the player even more with the indu
 [[dependencies.ablaze]]
     modId="flywheel"
     mandatory=true
-    versionRange="[1.18-0.6.0]"
+    versionRange="[1.18-0.6.0.51]"
     ordering="AFTER"
     side="CLIENT"
 
@@ -46,7 +46,7 @@ Create: Ablaze is a mod that hopes to empower the player even more with the indu
 [[dependencies.ablaze]]
     modId="alloyed"
     mandatory=false
-    versionRange="[1.18.1-v1.2]"
+    versionRange="[1.18.1]"
     ordering="AFTER"
     side="BOTH"
 

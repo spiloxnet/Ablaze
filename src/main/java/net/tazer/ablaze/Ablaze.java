@@ -43,7 +43,4 @@ public class Ablaze
     public static CreateRegistrate defaultRegistrate() {
         return basicRegistrate().creativeModeTab(AllItemGroups::baseTab);
     }
-    public static CreateRegistrate compatRegistrate() {
-        return basicRegistrate().creativeModeTab(AllItemGroups::compatTab);
-    }
 }
