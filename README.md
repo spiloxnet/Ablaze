@@ -19,8 +19,3 @@ Check out the wiki and in-game Tool-tips for further info on how to use these fe
 <hr>
 <!-- <h4 align="center">Find out more about Create: Ablaze on our <a href="">Project Page</a></h4> -->
 
-![Create: Ablaze Logo](https://cdn.discordapp.com/attachments/941856607573258281/944693040797327400/Engines_Ablaze.png)
-
-# Create: Ablaze
-
-
