@@ -5,7 +5,7 @@
 	<a href="https://discord.gg/W5pz7gtJp7"><img src="https://img.shields.io/discord/620934202875183104?color=5865f2&label=Feedback%20%26%20Help&style=flat" alt="Discord"></a>
 </h1>
 
-Welcome to Create: Ablaze, a mod that hopes to empower the player even more with the industrial age of the create mod and space rockets! .
+Welcome to Create: Ablaze, a mod that hopes to empower the player even more with the industrial age of the create mod and space rockets!
 
 Space rockets are the goal of this mod, but they're not as simple as you'd think. Rockets are made to be customizable and your first rocket will likely be huge, you'll need things like combustion chambers, pipes, valves, etc. Rockets are built with creativity in mind, you can make a simple spaceship or a missile to blow up your friends!
 
